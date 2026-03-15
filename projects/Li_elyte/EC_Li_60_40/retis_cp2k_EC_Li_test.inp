@@ -46,7 +46,8 @@ kick-from = previous
 
 Orderparameter
 --------------
-class = Distance
+class = MinDist
+module = mindist.py
 index = (0, 1)
 periodic = True
 
