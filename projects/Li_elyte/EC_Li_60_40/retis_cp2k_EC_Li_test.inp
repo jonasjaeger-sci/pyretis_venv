@@ -1,0 +1,57 @@
+Retis 1D example
+================
+
+Simulation
+----------
+task = retis
+steps = 100
+interfaces = [0.78, 0.80, 0.82, 0.84, 0.86, 0.87, 0.88, 0.90, 0.92, 0.95]
+
+System
+------
+units = cp2k
+
+Engine settings
+---------------
+class = cp2k
+cp2k = /home/jonas/cp2k/exe/Linux-gnu-x86_64/cp2k.popt
+input_path = cp2k_input
+timestep = 0.5
+subcycles = 1
+cp2k_format = xyz
+extra_files = ['BASIS_SET', 'GTH_POTENTIALS']
+
+TIS settings
+------------
+freq = 0.5
+maxlength = 20000
+aimless = True
+allowmaxlength = False
+zero_momentum = False
+rescale_energy = False
+sigma_v = -1
+seed = 0
+
+RETIS settings
+--------------
+swapfreq = 0.5
+relative_shoots = None
+nullmoves = True
+swapsimul = True
+
+Initial-path
+------------
+method = kick
+kick-from = previous
+
+Orderparameter
+--------------
+class = Distance
+index = (0, 1)
+periodic = True
+
+Output
+------
+order-file = 1
+restart-file = 1
+trajectory-file = 10

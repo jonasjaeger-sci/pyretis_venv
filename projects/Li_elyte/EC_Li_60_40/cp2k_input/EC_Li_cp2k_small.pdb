@@ -1,0 +1,30 @@
+HEADER 
+TITLE     Built with Packmol                                             
+REMARK   Packmol generated pdb file 
+REMARK   Home-Page: http://m3g.iqm.unicamp.br/packmol
+REMARK
+ATOM      1 Li       A   1       7.957   5.309   8.790 1.00  0.00          Li   
+ATOM      2 Li       A   2       4.256   4.421   8.849 1.00  0.00          Li   
+ATOM      3 Li       A   3       8.347   1.478   2.196 1.00  0.00          Li   
+ATOM      4 Li       A   4       8.611   7.224   5.311 1.00  0.00          Li   
+HETATM    5  O   UNK B   1       2.192   2.584   0.644  0.00  0.00           O  
+HETATM    6  O   UNK B   1       1.288   2.511   2.704  0.00  0.00           O  
+HETATM    7  O   UNK B   1       2.632   4.279   2.127  0.00  0.00           O  
+HETATM    8  C   UNK B   1       1.234   1.536   0.643  0.00  0.00           C  
+HETATM    9  C   UNK B   1       1.055   1.247   2.099  0.00  0.00           C  
+HETATM   10  C   UNK B   1       2.087   3.221   1.850  0.00  0.00           C  
+HETATM   11  H   UNK B   1       1.599   0.671   0.084  0.00  0.00           H  
+HETATM   12  H   UNK B   1       0.316   1.907   0.174  0.00  0.00           H  
+HETATM   13  H   UNK B   1       0.053   0.879   2.335  0.00  0.00           H  
+HETATM   14  H   UNK B   1       1.798   0.538   2.479  0.00  0.00           H  
+CONECT    5    8   10
+CONECT    6    9   10
+CONECT    7   10
+CONECT    8    5    9   11   12
+CONECT    9    6    8   13   14
+CONECT   10    5    6    7
+CONECT   11    8
+CONECT   12    8
+CONECT   13    9
+CONECT   14    9
+END

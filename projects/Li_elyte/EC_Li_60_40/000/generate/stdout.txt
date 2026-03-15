@@ -1,0 +1,208 @@
+ DBCSR| CPU Multiplication driver                                           XSMM (U)
+ DBCSR| Multrec recursion limit                                              512 (U)
+ DBCSR| Multiplication stack size                                           1000 (D)
+ DBCSR| Maximum elements for images                                    UNLIMITED (U)
+ DBCSR| Multiplicative factor virtual images                                   1 (U)
+ DBCSR| Use multiplication densification                                       T (D)
+ DBCSR| Multiplication size stacks                                             3 (U)
+ DBCSR| Use memory pool for CPU allocation                                     F (U)
+ DBCSR| Number of 3D layers                                               SINGLE (U)
+ DBCSR| Use MPI memory allocation                                              F (U)
+ DBCSR| Use RMA algorithm                                                      F (U)
+ DBCSR| Use Communication thread                                               T (U)
+ DBCSR| Communication thread load                                             87 (D)
+ DBCSR| MPI: My process id                                                     0
+ DBCSR| MPI: Number of processes                                               1
+ DBCSR| OMP: Current number of threads                                         1
+ DBCSR| OMP: Max number of threads                                             1
+ DBCSR| Split modifier for TAS multiplication algorithm                  1.0E+00 (U)
+
+
+  **** **** ******  **  PROGRAM STARTED AT               2026-03-15 23:23:32.955
+ ***** ** ***  *** **   PROGRAM STARTED ON                                 ZBook
+ **    ****   ******    PROGRAM STARTED BY                                 jonas
+ ***** **    ** ** **   PROGRAM PROCESS ID                                  8879
+  **** **  *******  **  PROGRAM STARTED IN /home/jonas/pyretis_venv/projects/Li_
+                                           elyte/EC_Li_60_40/000/generate
+
+ CP2K| version string:                                       CP2K version 2025.2
+ CP2K| source code revision number:                                  git:3158929
+ CP2K| cp2kflags: omp libint fftw3 libxc libgrpp elpa parallel scalapack mpi_f08
+ CP2K|             cosma xsmm max_contr=4 has_ieee_exceptions spglib libvori lib
+ CP2K|            bbqb hdf5
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                      Mon Sep  1 04:33:23 PM CEST 2025
+ CP2K| Program compiled on                                                 ZBook
+ CP2K| Program compiled for                                     Linux-gnu-x86_64
+ CP2K| Data directory path                                 /home/jonas/cp2k/data
+ CP2K| Input file name                                                  step.inp
+
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name                                           BASIS_SET
+ GLOBAL| Potential file name                                      GTH_POTENTIALS
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name                                           conf.xyz
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                                                     kicked
+ GLOBAL| Run type                                                             MD
+ GLOBAL| FFT library                                                       FFTW3
+ GLOBAL| Diagonalization library                                            ELPA
+ GLOBAL| Cholesky decomposition library                                ScaLAPACK
+ GLOBAL| DGEMM library                                                      BLAS
+ GLOBAL| Minimum number of eigenvectors for ELPA usage                        16
+ GLOBAL| Orthonormality check for eigenvectors                          DISABLED
+ GLOBAL| Matrix multiplication library                                     COSMA
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Grid backend                                                       AUTO
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| MPI I/O enabled                                                       T
+ GLOBAL| Total number of message passing processes                             1
+ GLOBAL| Number of threads for this process                                    1
+ GLOBAL| This output is from process                                           0
+ GLOBAL| OpenMP stack size per thread (OMP_STACKSIZE)                    default
+ GLOBAL| CPU model name                           Intel(R) Core(TM) Ultra 7 255U
+ GLOBAL| CPUID                                                              1002
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal             32276340      32276340      32276340      32276340
+ MEMORY| MemFree              22654840      22654840      22654840      22654840
+ MEMORY| Buffers                257280        257280        257280        257280
+ MEMORY| Cached                5009724       5009724       5009724       5009724
+ MEMORY| Slab                   747088        747088        747088        747088
+ MEMORY| SReclaimable           389220        389220        389220        389220
+ MEMORY| MemLikelyFree        28311064      28311064      28311064      28311064
+
+
+ GENERATE|  Preliminary Number of Bonds generated:                             0
+ GENERATE|  Achieved consistency in connectivity generation.
+
+ *******************************************************************************
+ *******************************************************************************
+ **                                                                           **
+ **     #####                         ##              ##                      **
+ **    ##   ##            ##          ##              ##                      **
+ **   ##     ##                       ##            ######                    **
+ **   ##     ##  ##   ##  ##   #####  ##  ##   ####   ##    #####    #####    **
+ **   ##     ##  ##   ##  ##  ##      ## ##   ##      ##   ##   ##  ##   ##   **
+ **   ##  ## ##  ##   ##  ##  ##      ####     ###    ##   ######   ######    **
+ **    ##  ###   ##   ##  ##  ##      ## ##      ##   ##   ##       ##        **
+ **     #######   #####   ##   #####  ##  ##  ####    ##    #####   ##        **
+ **           ##                                                    ##        **
+ **                                                                           **
+ **                                                ... make the atoms dance   **
+ **                                                                           **
+ **            Copyright (C) by CP2K developers group (2000-2025)             **
+ **                      J. Chem. Phys. 152, 194103 (2020)                    **
+ **                                                                           **
+ *******************************************************************************
+
+
+ TOTAL NUMBERS AND MAXIMUM NUMBERS
+
+  Total number of            - Atomic kinds:                                   4
+                             - Atoms:                                         14
+                             - Shell sets:                                    20
+                             - Shells:                                        62
+                             - Primitive Cartesian functions:                116
+                             - Cartesian basis functions:                    128
+                             - Spherical basis functions:                    122
+
+  Maximum angular momentum of- Orbital basis functions:                        2
+                             - Local part of the GTH pseudopotential:          2
+                             - Non-local part of the GTH pseudopotential:      1
+
+
+ SCF PARAMETERS         Density guess:                                   RESTART
+                        --------------------------------------------------------
+                        max_scf:                                             300
+                        max_scf_history:                                       0
+                        max_diis:                                              4
+                        --------------------------------------------------------
+                        eps_scf:                                        1.00E-07
+                        eps_scf_history:                                0.00E+00
+                        eps_diis:                                       1.00E-01
+                        eps_eigval:                                     1.00E-05
+                        --------------------------------------------------------
+                        level_shift [a.u.]:                             0.000000
+                        --------------------------------------------------------
+                        Mixing method:                            BROYDEN_MIXING
+                                                charge density mixing in g-space
+                        --------------------------------------------------------
+                        No outer SCF
+
+ MD_PAR| Molecular dynamics protocol (MD input parameters)
+ MD_PAR| Ensemble type                                                       NVE
+ MD_PAR| Number of time steps                                                  1
+ MD_PAR| Time step [fs]                                                 0.500000
+ MD_PAR| Temperature [K]                                              300.000000
+ MD_PAR| Temperature tolerance [K]                                      0.000000
+ MD_PAR| Print MD information every                                    1 step(s)
+ MD_PAR| File type   Print frequency [steps]                          File names
+ MD_PAR| Coordinates          1                                 kicked-pos-1.xyz
+ MD_PAR| Velocities           1                                 kicked-vel-1.xyz
+ MD_PAR| Energies             1                                    kicked-1.ener
+ MD_PAR| Dump                 1                                 kicked-1.restart
+
+ ROT| Rotational analysis information
+ ROT| Principal axes and moments of inertia [a.u.]
+ ROT|                           1                   2                   3
+ ROT| Eigenvalues      2.77934973641E+06   9.77517834533E+06   1.07745426299E+07
+ ROT|      x              0.672534779579     -0.709933511587     -0.209024829586
+ ROT|      y              0.367958372087      0.075711375258      0.926754780979
+ ROT|      z              0.642108718729      0.700187258370     -0.312144512284
+ ROT| Number of rotovibrational vectors                                        6
+
+ DOF| Calculation of degrees of freedom
+ DOF| Number of atoms                                                         14
+ DOF| Number of intramolecular constraints                                     0
+ DOF| Number of intermolecular constraints                                     0
+ DOF| Invariants (translations + rotations)                                    3
+ DOF| Degrees of freedom                                                      39
+
+ DOF| Restraints information
+ DOF| Number of intramolecular restraints                                      0
+ DOF| Number of intermolecular restraints                                      0
+
+ MD_VEL| Velocities initialization
+ MD_VEL| Initial temperature [K]                                      336.469641
+ MD_VEL| COM velocity             0.0001765239     0.0000775541    -0.0000347197
+
+ Number of electrons:                                                         38
+ Number of occupied orbitals:                                                 19
+ Number of molecular orbitals:                                                19
+
+ Number of orbital functions:                                                122
+ Number of independent orbital functions:                                    122
+
+ Extrapolation method: initial_guess
+
+ *** WARNING in qs_initial_guess.F:306 :: User requested to restart the    ***
+ *** wavefunction from the file named: kicked-RESTART.wfn. This file does  ***
+ *** not exist. Please check the existence of the file or change properly  ***
+ *** the value of the keyword WFN_RESTART_FILE_NAME. Calculation continues ***
+ *** using ATOMIC GUESS.                                                   ***
+
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 NoMix/Diag. 0.40E+00    0.2     2.06865307       -67.7844820228 -6.78E+01
+     2 Broy./Diag. 0.40E+00    0.3     1.06707189       -61.9991317803  5.79E+00
+     3 Broy./Diag. 0.40E+00    0.3     0.79697714       -68.9495140533 -6.95E+00
+     4 Broy./Diag. 0.40E+00    0.3     1.41564929       -68.3974696968  5.52E-01
+     5 Broy./Diag. 0.40E+00    0.3     0.73687361       -67.9169973032  4.80E-01
+     6 Broy./Diag. 0.40E+00    0.4     0.42311498       -67.8182352683  9.88E-02
+     7 Broy./Diag. 0.40E+00    0.4     0.53996482       -67.8560594184 -3.78E-02
+     8 Broy./Diag. 0.40E+00    0.4     0.52592265       -67.8272813218  2.88E-02
+     9 Broy./Diag. 0.40E+00    0.4     0.28899065       -67.8846476243 -5.74E-02
+    10 Broy./Diag. 0.40E+00    0.4     0.09421036       -67.8401420818  4.45E-02
+    11 Broy./Diag. 0.40E+00    0.4     0.30879616       -67.8202711691  1.99E-02
+    12 Broy./Diag. 0.40E+00    0.4     0.19679241       -67.8494195768 -2.91E-02
+    13 Broy./Diag. 0.40E+00    0.4     0.07042671       -67.8303561032  1.91E-02
+    14 Broy./Diag. 0.40E+00    0.4     0.01635625       -67.8382098697 -7.85E-03
+    15 Broy./Diag. 0.40E+00    0.5     0.00983712       -67.8369380610  1.27E-03
+    16 Broy./Diag. 0.40E+00    0.4     0.00650825       -67.8381252168 -1.19E-03
