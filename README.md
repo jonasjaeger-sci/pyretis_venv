@@ -1,1 +1,1 @@
-# PyRETIS Project
+# PyRETIS Testing environment
