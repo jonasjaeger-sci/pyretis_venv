@@ -2,7 +2,8 @@
 This is a class script for a custom order parameter calculation of the minimal distance between any particles
 """
 
-from orderparameter import OrderParameter,Distance
+# from orderparameter import OrderParameter,Distance
+from pyretis.orderparameter.orderparameter import OrderParameter
 import random
 
 class MinDist(OrderParameter):
@@ -26,7 +27,9 @@ class MinDist(OrderParameter):
             minimal distance between any two particles of the system
         """
 
+
+
         n_atoms = len(system.particles.pos)
         print(f"number of atoms: {n_atoms}")
-        return random.random()*2
+        return [random.random()*2]
 

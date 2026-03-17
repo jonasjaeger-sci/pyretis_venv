@@ -9,7 +9,7 @@
                /___/
         
 [INFO]: PyRETIS version: 3.0.1
-[INFO]: Start of execution: 16.03.2026 00:22:05
+[INFO]: Start of execution: 16.03.2026 12:02:15
 [INFO]: Python version: 3.12.3
 [INFO]: Running in directory: /home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40
 [INFO]: Input file: retis_cp2k_EC_Li_test.inp
@@ -72,39 +72,669 @@
 [INFO]: Created units: "cp2k".
 [INFO]: Command for execution of CP2K: /home/jonas/cp2k/exe/Linux-gnu-x86_64/cp2k.popt
 [INFO]: Created engine "CP2K external engine" from settings.
-[CRITICAL]: Could not import module: mindist.py
-[ERROR]: "ValueError: ('Could not import module: mindist.py',)".
-[ERROR]: Traceback (most recent call last):
-           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/bin/pyretisrun.py", line 518, in main
-             run, simulation, settings = set_up_simulation(infile, exe_dir)
-                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/bin/pyretisrun.py", line 435, in set_up_simulation
-             sim = create_simulation(sim_settings)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/setup/createsimulation.py", line 526, in create_simulation
-             simulation = sim_map[sim_type](settings)
-                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/setup/createsimulation.py", line 393, in create_retis_simulation
-             ensembles = create_ensembles(settings)
-                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
-           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/setup/createsimulation.py", line 238, in create_ensembles
-             ensembles.append(create_ensemble(settings['ensemble'][i]))
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/setup/createsimulation.py", line 132, in create_ensemble
-             order_function = create_orderparameter(settings)
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/setup/common.py", line 168, in create_orderparameter
-             main_order = create_external(
-                          ^^^^^^^^^^^^^^^^
-           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/setup/common.py", line 131, in create_external
-             obj = import_from(module, klass)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
-           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/core/common.py", line 130, in import_from
-             raise ValueError(msg)
-         ValueError: Could not import module: mindist.py
-         
+[INFO]: Created main order parameter:
+        Order parameter: "MinDist"
+        Generic order parameter
+[INFO]: Periodic settings not given. Assumed True for all directions.
+[INFO]: 
+        CREATING  ENSEMBLE  1
+        =====================
+[INFO]: Initializing unit system.
+[INFO]: Creating system from settings.
+[INFO]: Reading initial configuration from "cp2k_input/initial.xyz" (format: "xyz").
+[INFO]: Mass not specified for particle no. 1
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 2
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 3
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 4
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 5
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 6
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 7
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 8
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 9
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 10
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 11
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 12
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 13
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 14
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Creating force field.
+[INFO]: Created force field:
+        Force field: Generic force field
+        No potential functions added yet!
+[INFO]: Created units: "cp2k".
+[INFO]: Command for execution of CP2K: /home/jonas/cp2k/exe/Linux-gnu-x86_64/cp2k.popt
+[INFO]: Created engine "CP2K external engine" from settings.
+[INFO]: Created main order parameter:
+        Order parameter: "MinDist"
+        Generic order parameter
+[INFO]: Periodic settings not given. Assumed True for all directions.
+[INFO]: 
+        CREATING  ENSEMBLE  2
+        =====================
+[INFO]: Initializing unit system.
+[INFO]: Creating system from settings.
+[INFO]: Reading initial configuration from "cp2k_input/initial.xyz" (format: "xyz").
+[INFO]: Mass not specified for particle no. 1
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 2
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 3
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 4
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 5
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 6
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 7
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 8
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 9
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 10
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 11
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 12
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 13
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 14
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Creating force field.
+[INFO]: Created force field:
+        Force field: Generic force field
+        No potential functions added yet!
+[INFO]: Created units: "cp2k".
+[INFO]: Command for execution of CP2K: /home/jonas/cp2k/exe/Linux-gnu-x86_64/cp2k.popt
+[INFO]: Created engine "CP2K external engine" from settings.
+[INFO]: Created main order parameter:
+        Order parameter: "MinDist"
+        Generic order parameter
+[INFO]: Periodic settings not given. Assumed True for all directions.
+[INFO]: 
+        CREATING  ENSEMBLE  3
+        =====================
+[INFO]: Initializing unit system.
+[INFO]: Creating system from settings.
+[INFO]: Reading initial configuration from "cp2k_input/initial.xyz" (format: "xyz").
+[INFO]: Mass not specified for particle no. 1
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 2
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 3
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 4
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 5
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 6
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 7
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 8
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 9
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 10
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 11
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 12
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 13
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 14
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Creating force field.
+[INFO]: Created force field:
+        Force field: Generic force field
+        No potential functions added yet!
+[INFO]: Created units: "cp2k".
+[INFO]: Command for execution of CP2K: /home/jonas/cp2k/exe/Linux-gnu-x86_64/cp2k.popt
+[INFO]: Created engine "CP2K external engine" from settings.
+[INFO]: Created main order parameter:
+        Order parameter: "MinDist"
+        Generic order parameter
+[INFO]: Periodic settings not given. Assumed True for all directions.
+[INFO]: 
+        CREATING  ENSEMBLE  4
+        =====================
+[INFO]: Initializing unit system.
+[INFO]: Creating system from settings.
+[INFO]: Reading initial configuration from "cp2k_input/initial.xyz" (format: "xyz").
+[INFO]: Mass not specified for particle no. 1
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 2
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 3
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 4
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 5
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 6
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 7
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 8
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 9
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 10
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 11
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 12
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 13
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 14
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Creating force field.
+[INFO]: Created force field:
+        Force field: Generic force field
+        No potential functions added yet!
+[INFO]: Created units: "cp2k".
+[INFO]: Command for execution of CP2K: /home/jonas/cp2k/exe/Linux-gnu-x86_64/cp2k.popt
+[INFO]: Created engine "CP2K external engine" from settings.
+[INFO]: Created main order parameter:
+        Order parameter: "MinDist"
+        Generic order parameter
+[INFO]: Periodic settings not given. Assumed True for all directions.
+[INFO]: 
+        CREATING  ENSEMBLE  5
+        =====================
+[INFO]: Initializing unit system.
+[INFO]: Creating system from settings.
+[INFO]: Reading initial configuration from "cp2k_input/initial.xyz" (format: "xyz").
+[INFO]: Mass not specified for particle no. 1
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 2
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 3
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 4
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 5
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 6
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 7
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 8
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 9
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 10
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 11
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 12
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 13
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 14
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Creating force field.
+[INFO]: Created force field:
+        Force field: Generic force field
+        No potential functions added yet!
+[INFO]: Created units: "cp2k".
+[INFO]: Command for execution of CP2K: /home/jonas/cp2k/exe/Linux-gnu-x86_64/cp2k.popt
+[INFO]: Created engine "CP2K external engine" from settings.
+[INFO]: Created main order parameter:
+        Order parameter: "MinDist"
+        Generic order parameter
+[INFO]: Periodic settings not given. Assumed True for all directions.
+[INFO]: 
+        CREATING  ENSEMBLE  6
+        =====================
+[INFO]: Initializing unit system.
+[INFO]: Creating system from settings.
+[INFO]: Reading initial configuration from "cp2k_input/initial.xyz" (format: "xyz").
+[INFO]: Mass not specified for particle no. 1
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 2
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 3
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 4
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 5
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 6
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 7
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 8
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 9
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 10
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 11
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 12
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 13
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 14
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Creating force field.
+[INFO]: Created force field:
+        Force field: Generic force field
+        No potential functions added yet!
+[INFO]: Created units: "cp2k".
+[INFO]: Command for execution of CP2K: /home/jonas/cp2k/exe/Linux-gnu-x86_64/cp2k.popt
+[INFO]: Created engine "CP2K external engine" from settings.
+[INFO]: Created main order parameter:
+        Order parameter: "MinDist"
+        Generic order parameter
+[INFO]: Periodic settings not given. Assumed True for all directions.
+[INFO]: 
+        CREATING  ENSEMBLE  7
+        =====================
+[INFO]: Initializing unit system.
+[INFO]: Creating system from settings.
+[INFO]: Reading initial configuration from "cp2k_input/initial.xyz" (format: "xyz").
+[INFO]: Mass not specified for particle no. 1
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 2
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 3
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 4
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 5
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 6
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 7
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 8
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 9
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 10
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 11
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 12
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 13
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 14
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Creating force field.
+[INFO]: Created force field:
+        Force field: Generic force field
+        No potential functions added yet!
+[INFO]: Created units: "cp2k".
+[INFO]: Command for execution of CP2K: /home/jonas/cp2k/exe/Linux-gnu-x86_64/cp2k.popt
+[INFO]: Created engine "CP2K external engine" from settings.
+[INFO]: Created main order parameter:
+        Order parameter: "MinDist"
+        Generic order parameter
+[INFO]: Periodic settings not given. Assumed True for all directions.
+[INFO]: 
+        CREATING  ENSEMBLE  8
+        =====================
+[INFO]: Initializing unit system.
+[INFO]: Creating system from settings.
+[INFO]: Reading initial configuration from "cp2k_input/initial.xyz" (format: "xyz").
+[INFO]: Mass not specified for particle no. 1
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 2
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 3
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 4
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 5
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 6
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 7
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 8
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 9
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 10
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 11
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 12
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 13
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 14
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Creating force field.
+[INFO]: Created force field:
+        Force field: Generic force field
+        No potential functions added yet!
+[INFO]: Created units: "cp2k".
+[INFO]: Command for execution of CP2K: /home/jonas/cp2k/exe/Linux-gnu-x86_64/cp2k.popt
+[INFO]: Created engine "CP2K external engine" from settings.
+[INFO]: Created main order parameter:
+        Order parameter: "MinDist"
+        Generic order parameter
+[INFO]: Periodic settings not given. Assumed True for all directions.
+[INFO]: 
+        CREATING  ENSEMBLE  9
+        =====================
+[INFO]: Initializing unit system.
+[INFO]: Creating system from settings.
+[INFO]: Reading initial configuration from "cp2k_input/initial.xyz" (format: "xyz").
+[INFO]: Mass not specified for particle no. 1
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 2
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 3
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 4
+        Will guess from particle type "Li"
+[INFO]: -> Using a mass of 6.967500 g/mol (12700.975525 in internal units)
+[INFO]: Mass not specified for particle no. 5
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 6
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 7
+        Will guess from particle type "O"
+[INFO]: -> Using a mass of 15.999400 g/mol (29165.122040 in internal units)
+[INFO]: Mass not specified for particle no. 8
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 9
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 10
+        Will guess from particle type "C"
+[INFO]: -> Using a mass of 12.010600 g/mol (21893.984448 in internal units)
+[INFO]: Mass not specified for particle no. 11
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 12
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 13
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Mass not specified for particle no. 14
+        Will guess from particle type "H"
+[INFO]: -> Using a mass of 1.007975 g/mol (1837.426021 in internal units)
+[INFO]: Creating force field.
+[INFO]: Created force field:
+        Force field: Generic force field
+        No potential functions added yet!
+[INFO]: Created units: "cp2k".
+[INFO]: Command for execution of CP2K: /home/jonas/cp2k/exe/Linux-gnu-x86_64/cp2k.popt
+[INFO]: Created engine "CP2K external engine" from settings.
+[INFO]: Created main order parameter:
+        Order parameter: "MinDist"
+        Generic order parameter
+[INFO]: Periodic settings not given. Assumed True for all directions.
+[INFO]: Created simulation:
+        RETIS simulation
+        Ensembles:
+        [0^-]: Interfaces: (-inf, 0.78, 0.78)
+        [0^+]: Interfaces: (0.78, 0.78, 0.95)
+        [1^+]: Interfaces: (0.78, 0.8, 0.95)
+        [2^+]: Interfaces: (0.78, 0.82, 0.95)
+        [3^+]: Interfaces: (0.78, 0.84, 0.95)
+        [4^+]: Interfaces: (0.78, 0.86, 0.95)
+        [5^+]: Interfaces: (0.78, 0.87, 0.95)
+        [6^+]: Interfaces: (0.78, 0.88, 0.95)
+        [7^+]: Interfaces: (0.78, 0.9, 0.95)
+        [8^+]: Interfaces: (0.78, 0.92, 0.95)
+        Number of steps to do: 100
+[INFO]: Setup for simulation "retis" is done.
 [INFO]: Full simulation settings written to: /home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/out.rst
-[INFO]: End of PyRETIS execution: 16.03.2026 00:22:05
+[INFO]: Creating output directories for path_ensemble [0^-]
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/000"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/000/accepted"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/000/generate"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/000/traj"
+[INFO]: Disabling output to screen path_ensemble-retis-screen since progress bar is ON
+[INFO]: Creating output directories for path_ensemble [0^+]
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/001"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/001/accepted"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/001/generate"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/001/traj"
+[INFO]: Disabling output to screen path_ensemble-retis-screen since progress bar is ON
+[INFO]: Creating output directories for path_ensemble [1^+]
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/002"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/002/accepted"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/002/generate"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/002/traj"
+[INFO]: Disabling output to screen path_ensemble-retis-screen since progress bar is ON
+[INFO]: Creating output directories for path_ensemble [2^+]
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/003"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/003/accepted"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/003/generate"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/003/traj"
+[INFO]: Disabling output to screen path_ensemble-retis-screen since progress bar is ON
+[INFO]: Creating output directories for path_ensemble [3^+]
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/004"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/004/accepted"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/004/generate"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/004/traj"
+[INFO]: Disabling output to screen path_ensemble-retis-screen since progress bar is ON
+[INFO]: Creating output directories for path_ensemble [4^+]
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/005"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/005/accepted"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/005/generate"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/005/traj"
+[INFO]: Disabling output to screen path_ensemble-retis-screen since progress bar is ON
+[INFO]: Creating output directories for path_ensemble [5^+]
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/006"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/006/accepted"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/006/generate"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/006/traj"
+[INFO]: Disabling output to screen path_ensemble-retis-screen since progress bar is ON
+[INFO]: Creating output directories for path_ensemble [6^+]
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/007"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/007/accepted"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/007/generate"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/007/traj"
+[INFO]: Disabling output to screen path_ensemble-retis-screen since progress bar is ON
+[INFO]: Creating output directories for path_ensemble [7^+]
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/008"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/008/accepted"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/008/generate"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/008/traj"
+[INFO]: Disabling output to screen path_ensemble-retis-screen since progress bar is ON
+[INFO]: Creating output directories for path_ensemble [8^+]
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/009"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/009/accepted"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/009/generate"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/009/traj"
+[INFO]: Disabling output to screen path_ensemble-retis-screen since progress bar is ON
+[INFO]: Initialising retis simulation. 
+[INFO]: Initialising path ensembles:
+[INFO]: Initiation method "kick" selected
+[INFO]: Kick-initiate using previous configuration
+[INFO]: Initiating path ensemble [0^-]
+[INFO]: Will generate initial path by kicking
+[INFO]: Searching crossing with middle interface
+[INFO]: Kicking with external integrator: CP2K external engine
+[INFO]: Searching for crossing with:      0.78
+[INFO]: Crossed middle interface: 0.7446492586210949 -> 1.7803041939151985 | 0.78
+[INFO]: Propagating from crossing points
+[INFO]: Propagating forward from crossing points for initial path
+[ERROR]: Execution of external program (CP2K external engine) failed!
+[ERROR]: Attempted command: /home/jonas/cp2k/exe/Linux-gnu-x86_64/cp2k.popt -i continue.inp
+[ERROR]: Execution directory: /home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/000/generate
+[ERROR]: Return code from external program: -2
+[ERROR]: STDOUT, see file: /home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/000/generate/stdout.txt
+[ERROR]: STDERR, see file: /home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/000/generate/stderr.txt
+[ERROR]: "RuntimeError: ('Execution of external program (CP2K external engine) failed with command:\n /home/jonas/cp2k/exe/Linux-gnu-x86_64/cp2k.popt -i continue.inp.\nReturn code: -2',)".
+[ERROR]: Traceback (most recent call last):
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/bin/pyretisrun.py", line 522, in main
+             run(simulation, settings, progress=progress)
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/bin/pyretisrun.py", line 282, in run_path_simulation
+             if not sim.initiate(sim_settings):
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/simulation/path_simulation.py", line 291, in initiate
+             for i_ens, (accept, path, status, path_ensemble) in enumerate(init):
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/initiation/initiate_kick.py", line 121, in initiate_kick_max
+             accept, initial_path, status = initiate_path_ensemble_kick(
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/initiation/initiate_kick.py", line 170, in initiate_path_ensemble_kick
+             for attempt in generate_initial_path_kick(ensemble, tis_settings):
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/initiation/initiate_kick.py", line 275, in generate_initial_path_kick
+             success, msg = engine.propagate(path_forw, ensemble,
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/engines/external.py", line 641, in propagate
+             success, status = self._propagate_from(
+                               ^^^^^^^^^^^^^^^^^^^^^
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/engines/cp2k.py", line 572, in _propagate_from
+             out_files = self.run_cp2k('continue.inp', name)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/engines/cp2k.py", line 425, in run_cp2k
+             self.execute_command(cmd, cwd=self.exe_dir, inputs=None)
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/engines/external.py", line 330, in execute_command
+             raise RuntimeError(msg)
+         RuntimeError: Execution of external program (CP2K external engine) failed with command:
+          /home/jonas/cp2k/exe/Linux-gnu-x86_64/cp2k.popt -i continue.inp.
+         Return code: -2
+         
+[INFO]: Execution ended at step 0
+[INFO]: Full simulation settings written to: /home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/out.rst
+[INFO]: End of PyRETIS execution: 16.03.2026 12:03:21
 [INFO]: PyRETIS references:
         -------------------
         [1] A. Lervik, E. Riccardi and T. S. van Erp, J. Comput. Chem., 2017

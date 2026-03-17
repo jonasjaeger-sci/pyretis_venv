@@ -47,7 +47,7 @@ kick-from = previous
 Orderparameter
 --------------
 class = MinDist
-module = mindist.py
+module = /home/jonas/pyretis_venv/projects/Li_elyte/EC_Li_60_40/mindist.py
 index = (0, 1)
 periodic = True
 
