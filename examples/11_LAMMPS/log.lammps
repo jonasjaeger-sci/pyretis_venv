@@ -1,0 +1,14 @@
+LAMMPS (22 Jul 2025 - Update 3)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+units lj
+atom_style full
+timestep 0.001
+
+dimension 2
+boundary p p p
+
+read_data system.data
+ERROR: Cannot open file system.data: No such file or directory (src/read_data.cpp:380)
+Last input line: read_data system.data 
+                           ^^^^^^^^^^^

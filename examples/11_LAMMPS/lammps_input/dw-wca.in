@@ -1,0 +1,51 @@
+group atom1 id 1
+group atom2 id 2
+
+variable rwidth equal 1.62246204831
+variable width_pwr2 equal 0.25
+variable height equal 15.0
+variable height_x4 equal "4*v_height"
+
+variable xlen equal lx
+variable ylen equal ly
+
+compute x all property/atom x
+compute y all property/atom y
+
+variable x1 equal c_x[1]
+variable y1 equal c_y[1]
+
+variable x2 equal c_x[2]
+variable y2 equal c_y[2]
+
+variable xdist equal "v_x1 - v_x2"
+variable ydist equal "v_y1 - v_y2"
+
+variable y_pos_test equal "v_ydist > 0.5*v_ylen"
+variable y_neg_test equal "v_ydist < -0.5*v_ylen"
+
+variable ydist_shift1 equal "v_ydist + v_y_neg_test*v_ylen"
+variable dely equal "v_ydist_shift1 - v_y_pos_test*v_ylen"
+
+variable x_pos_test equal "v_xdist > 0.5*v_xlen"
+variable x_neg_test equal "v_xdist < -0.5*v_xlen"
+
+variable xdist_shift1 equal "v_xdist + v_x_neg_test*v_xlen"
+variable delx equal "v_xdist_shift1 - v_x_pos_test*v_xlen"
+
+variable delr equal "sqrt(v_delx^2.0 + v_dely^2.0)"
+
+variable force12 equal "v_height_x4 * (1.0 - ((v_delr - v_rwidth)^2.0/v_width_pwr2)) * ((v_delr - v_rwidth)/v_width_pwr2)"
+
+variable force12_x1 equal "(v_force12 * v_delx)/v_delr"
+variable force12_x2 equal "-v_force12_x1"
+variable force12_y1 equal "(v_force12 * v_dely)/v_delr"
+variable force12_y2 equal "-v_force12_y1"
+
+variable dw_wca_energy equal "v_height * (1.0 - ((v_delr - v_rwidth)^2.0/v_width_pwr2))^2.0"
+variable dw_wca_energy_atom atom v_dw_wca_energy
+
+fix dw_wca1 atom1 addforce v_force12_x1 v_force12_y1 0.0 energy v_dw_wca_energy_atom
+fix dw_wca2 atom2 addforce v_force12_x2 v_force12_y2 0.0
+
+fix_modify dw_wca1 energy yes
