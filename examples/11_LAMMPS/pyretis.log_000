@@ -1,0 +1,63 @@
+[INFO]: 
+        
+          _______                                     _______________
+         /   ___ \       _____  ____  ____________   / __        ___/
+        /_/\ \_/ /_  __  \  _ \/ __/ /_  _/ / ___/  /_/ / // // /
+           /  __  / / /  / /_)  _/    / // /\ \        / // // / __
+          / /   \ \/ /  / _  \ /__   / // /__\ \   ___/ // // /_/ /
+         /_/    _\  /  /_/ |_|___/  /_//_/_____/  /______________/
+               /___/
+        
+[INFO]: PyRETIS version: 3.0.1
+[INFO]: Start of execution: 17.03.2026 14:51:37
+[INFO]: Python version: 3.12.3
+[INFO]: Running in directory: /home/jonas/pyretis_venv/examples/11_LAMMPS
+[INFO]: Input file: retis.rst
+[INFO]: Log file: pyretis.log
+[INFO]: Reading input settings from: retis.rst
+[WARNING]: Ignoring unknown "conf" in "system"
+[INFO]: Set up and create simulation.
+[INFO]: 
+        CREATING  ENSEMBLE  0
+        =====================
+[INFO]: Initializing unit system.
+[INFO]: Creating system from settings.
+[ERROR]: "KeyError: ('conf',)".
+[ERROR]: Traceback (most recent call last):
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/bin/pyretisrun.py", line 518, in main
+             run, simulation, settings = set_up_simulation(infile, exe_dir)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/bin/pyretisrun.py", line 435, in set_up_simulation
+             sim = create_simulation(sim_settings)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/setup/createsimulation.py", line 526, in create_simulation
+             simulation = sim_map[sim_type](settings)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/setup/createsimulation.py", line 393, in create_retis_simulation
+             ensembles = create_ensembles(settings)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/setup/createsimulation.py", line 238, in create_ensembles
+             ensembles.append(create_ensemble(settings['ensemble'][i]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/setup/createsimulation.py", line 109, in create_ensemble
+             system = prepare_system(settings)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/setup/createsimulation.py", line 429, in prepare_system
+             system = create_system(settings)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/setup/createsystem.py", line 586, in create_system
+             particles.set_pos((input_file['conf'], None))
+                                ~~~~~~~~~~^^^^^^^^
+         KeyError: 'conf'
+         
+[INFO]: Full simulation settings written to: /home/jonas/pyretis_venv/examples/11_LAMMPS/out.rst
+[INFO]: End of PyRETIS execution: 17.03.2026 14:51:37
+[INFO]: PyRETIS references:
+        -------------------
+        [1] A. Lervik, E. Riccardi and T. S. van Erp, J. Comput. Chem., 2017
+            doi: https://dx.doi.org/10.1002/jcc.24900
+        [2] E. Riccardi, A. Lervik, S. Roet, O. Aarøen and T. S. van Erp,
+            J. Comput. Chem., 2019, doi: https://dx.doi.org/10.1002/jcc.26112
+        [3] W. Vervust, D. T. Zhang, A. Ghysels, S. Roet, T. S. van Erp, E. Riccardi,
+            J. Comput. Chem. 2024, 1. https://doi.org/10.1002/jcc.27319
+[INFO]: http://www.pyretis.org

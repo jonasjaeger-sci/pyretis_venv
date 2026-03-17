@@ -17,6 +17,7 @@ class = lammps
 lmp = ~/lammps/build/lmp
 input_path = lammps_input
 subcycles = 1
+lammps_format = data
 extra_files = ['dw-wca.in']
 
 TIS settings

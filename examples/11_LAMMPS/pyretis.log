@@ -9,49 +9,931 @@
                /___/
         
 [INFO]: PyRETIS version: 3.0.1
-[INFO]: Start of execution: 17.03.2026 14:51:37
+[INFO]: Start of execution: 17.03.2026 18:36:24
 [INFO]: Python version: 3.12.3
 [INFO]: Running in directory: /home/jonas/pyretis_venv/examples/11_LAMMPS
 [INFO]: Input file: retis.rst
 [INFO]: Log file: pyretis.log
 [INFO]: Reading input settings from: retis.rst
-[WARNING]: Ignoring unknown "conf" in "system"
 [INFO]: Set up and create simulation.
 [INFO]: 
         CREATING  ENSEMBLE  0
         =====================
 [INFO]: Initializing unit system.
 [INFO]: Creating system from settings.
-[ERROR]: "KeyError: ('conf',)".
-[ERROR]: Traceback (most recent call last):
-           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/bin/pyretisrun.py", line 518, in main
-             run, simulation, settings = set_up_simulation(infile, exe_dir)
-                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/bin/pyretisrun.py", line 435, in set_up_simulation
-             sim = create_simulation(sim_settings)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/setup/createsimulation.py", line 526, in create_simulation
-             simulation = sim_map[sim_type](settings)
-                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/setup/createsimulation.py", line 393, in create_retis_simulation
-             ensembles = create_ensembles(settings)
-                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
-           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/setup/createsimulation.py", line 238, in create_ensembles
-             ensembles.append(create_ensemble(settings['ensemble'][i]))
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/setup/createsimulation.py", line 109, in create_ensemble
-             system = prepare_system(settings)
-                      ^^^^^^^^^^^^^^^^^^^^^^^^
-           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/setup/createsimulation.py", line 429, in prepare_system
-             system = create_system(settings)
-                      ^^^^^^^^^^^^^^^^^^^^^^^
-           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/setup/createsystem.py", line 586, in create_system
-             particles.set_pos((input_file['conf'], None))
-                                ~~~~~~~~~~^^^^^^^^
-         KeyError: 'conf'
-         
+[WARNING]: using lammps_input/system.data as "conf" file
+[INFO]: Creating force field.
+[INFO]: Created force field:
+        Force field: Generic force field
+        No potential functions added yet!
+[INFO]: Created units: "real".
+[INFO]: Created engine "LAMMPS Engine" from settings.
+[INFO]: No order parameter created
+[INFO]: 
+        CREATING  ENSEMBLE  1
+        =====================
+[INFO]: Initializing unit system.
+[INFO]: Creating system from settings.
+[WARNING]: using lammps_input/system.data as "conf" file
+[INFO]: Creating force field.
+[INFO]: Created force field:
+        Force field: Generic force field
+        No potential functions added yet!
+[INFO]: Created units: "real".
+[INFO]: Created engine "LAMMPS Engine" from settings.
+[INFO]: No order parameter created
+[INFO]: 
+        CREATING  ENSEMBLE  2
+        =====================
+[INFO]: Initializing unit system.
+[INFO]: Creating system from settings.
+[WARNING]: using lammps_input/system.data as "conf" file
+[INFO]: Creating force field.
+[INFO]: Created force field:
+        Force field: Generic force field
+        No potential functions added yet!
+[INFO]: Created units: "real".
+[INFO]: Created engine "LAMMPS Engine" from settings.
+[INFO]: No order parameter created
+[INFO]: 
+        CREATING  ENSEMBLE  3
+        =====================
+[INFO]: Initializing unit system.
+[INFO]: Creating system from settings.
+[WARNING]: using lammps_input/system.data as "conf" file
+[INFO]: Creating force field.
+[INFO]: Created force field:
+        Force field: Generic force field
+        No potential functions added yet!
+[INFO]: Created units: "real".
+[INFO]: Created engine "LAMMPS Engine" from settings.
+[INFO]: No order parameter created
+[INFO]: 
+        CREATING  ENSEMBLE  4
+        =====================
+[INFO]: Initializing unit system.
+[INFO]: Creating system from settings.
+[WARNING]: using lammps_input/system.data as "conf" file
+[INFO]: Creating force field.
+[INFO]: Created force field:
+        Force field: Generic force field
+        No potential functions added yet!
+[INFO]: Created units: "real".
+[INFO]: Created engine "LAMMPS Engine" from settings.
+[INFO]: No order parameter created
+[INFO]: 
+        CREATING  ENSEMBLE  5
+        =====================
+[INFO]: Initializing unit system.
+[INFO]: Creating system from settings.
+[WARNING]: using lammps_input/system.data as "conf" file
+[INFO]: Creating force field.
+[INFO]: Created force field:
+        Force field: Generic force field
+        No potential functions added yet!
+[INFO]: Created units: "real".
+[INFO]: Created engine "LAMMPS Engine" from settings.
+[INFO]: No order parameter created
+[INFO]: 
+        CREATING  ENSEMBLE  6
+        =====================
+[INFO]: Initializing unit system.
+[INFO]: Creating system from settings.
+[WARNING]: using lammps_input/system.data as "conf" file
+[INFO]: Creating force field.
+[INFO]: Created force field:
+        Force field: Generic force field
+        No potential functions added yet!
+[INFO]: Created units: "real".
+[INFO]: Created engine "LAMMPS Engine" from settings.
+[INFO]: No order parameter created
+[INFO]: 
+        CREATING  ENSEMBLE  7
+        =====================
+[INFO]: Initializing unit system.
+[INFO]: Creating system from settings.
+[WARNING]: using lammps_input/system.data as "conf" file
+[INFO]: Creating force field.
+[INFO]: Created force field:
+        Force field: Generic force field
+        No potential functions added yet!
+[INFO]: Created units: "real".
+[INFO]: Created engine "LAMMPS Engine" from settings.
+[INFO]: No order parameter created
+[INFO]: Created simulation:
+        RETIS simulation
+        Ensembles:
+        [0^-]: Interfaces: (-inf, 1.24, 1.24)
+        [0^+]: Interfaces: (1.24, 1.24, 1.74)
+        [1^+]: Interfaces: (1.24, 1.34, 1.74)
+        [2^+]: Interfaces: (1.24, 1.4, 1.74)
+        [3^+]: Interfaces: (1.24, 1.46, 1.74)
+        [4^+]: Interfaces: (1.24, 1.52, 1.74)
+        [5^+]: Interfaces: (1.24, 1.54, 1.74)
+        [6^+]: Interfaces: (1.24, 1.64, 1.74)
+        Number of steps to do: 30
+[INFO]: Setup for simulation "retis" is done.
 [INFO]: Full simulation settings written to: /home/jonas/pyretis_venv/examples/11_LAMMPS/out.rst
-[INFO]: End of PyRETIS execution: 17.03.2026 14:51:37
+[INFO]: Backup existing file "/home/jonas/pyretis_venv/examples/11_LAMMPS/out.rst" to "/home/jonas/pyretis_venv/examples/11_LAMMPS/out.rst_000"
+[INFO]: Creating output directories for path_ensemble [0^-]
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/000"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/000/accepted"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/000/generate"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/000/traj"
+[INFO]: Disabling output to screen path_ensemble-retis-screen since progress bar is ON
+[INFO]: Creating output directories for path_ensemble [0^+]
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/001"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/001/accepted"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/001/generate"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/001/traj"
+[INFO]: Disabling output to screen path_ensemble-retis-screen since progress bar is ON
+[INFO]: Creating output directories for path_ensemble [1^+]
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/002"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/002/accepted"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/002/generate"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/002/traj"
+[INFO]: Disabling output to screen path_ensemble-retis-screen since progress bar is ON
+[INFO]: Creating output directories for path_ensemble [2^+]
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/003"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/003/accepted"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/003/generate"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/003/traj"
+[INFO]: Disabling output to screen path_ensemble-retis-screen since progress bar is ON
+[INFO]: Creating output directories for path_ensemble [3^+]
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/004"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/004/accepted"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/004/generate"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/004/traj"
+[INFO]: Disabling output to screen path_ensemble-retis-screen since progress bar is ON
+[INFO]: Creating output directories for path_ensemble [4^+]
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/005"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/005/accepted"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/005/generate"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/005/traj"
+[INFO]: Disabling output to screen path_ensemble-retis-screen since progress bar is ON
+[INFO]: Creating output directories for path_ensemble [5^+]
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/006"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/006/accepted"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/006/generate"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/006/traj"
+[INFO]: Disabling output to screen path_ensemble-retis-screen since progress bar is ON
+[INFO]: Creating output directories for path_ensemble [6^+]
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/007"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/007/accepted"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/007/generate"
+[INFO]: Created directory: "/home/jonas/pyretis_venv/examples/11_LAMMPS/007/traj"
+[INFO]: Disabling output to screen path_ensemble-retis-screen since progress bar is ON
+[INFO]: Initialising retis simulation. 
+[INFO]: Initialising path ensembles:
+[INFO]: Initiation method "load" selected
+[INFO]: Loading data for path path ensemble [0^-]:
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 1
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 2
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 3
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 4
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 5
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 6
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 7
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 8
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 9
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 10
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 11
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 12
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 13
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 14
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 15
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 16
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 17
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 18
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 19
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 20
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 21
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 22
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 23
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 24
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 25
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 26
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 27
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 28
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 29
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 30
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 31
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 32
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 33
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 34
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 35
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 36
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 37
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 38
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 39
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 40
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 41
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 42
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 43
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 44
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 45
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 46
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 47
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 48
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 49
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 50
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 51
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 52
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 53
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 54
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 55
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 56
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 57
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 58
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 59
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 60
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 61
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 62
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 63
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 64
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 65
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 66
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 67
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 68
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 69
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 70
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 71
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 72
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 73
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 74
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 75
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 76
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 77
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 78
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 79
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 80
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 81
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 82
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 83
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 84
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 85
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 86
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 87
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 88
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 89
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 90
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 91
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 92
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 93
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 94
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 95
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 96
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 97
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 98
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 99
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 100
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 101
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 102
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 103
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 104
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 105
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 106
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 107
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 108
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 109
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 110
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 111
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 112
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 113
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 114
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 115
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 116
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 117
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 118
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 119
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 120
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 121
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 122
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 123
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 124
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 125
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 126
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 127
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 128
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 129
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 130
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 131
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 132
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 133
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 134
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 135
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 136
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 137
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 138
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 139
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 140
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 141
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 142
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 143
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 144
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 145
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 146
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 147
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 148
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 149
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 150
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 151
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 152
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 153
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 154
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 155
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 156
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 157
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 158
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 159
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 160
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 161
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 162
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 163
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 164
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 165
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 166
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 167
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 168
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 169
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 170
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 171
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 172
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 173
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 174
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 175
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 176
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 177
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 178
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 179
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 180
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 181
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 182
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 183
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 184
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 185
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 186
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 187
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 188
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 189
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 190
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 191
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 192
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 193
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 194
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 195
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 196
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 197
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 198
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 199
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 200
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 201
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 202
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 203
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 204
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 205
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 206
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 207
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 208
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 209
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 210
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 211
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 212
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 213
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 214
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 215
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 216
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 217
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 218
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 219
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 220
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 221
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 222
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 223
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 224
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 225
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 226
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 227
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 228
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 229
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 230
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 231
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 232
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 233
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 234
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 235
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 236
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 237
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 238
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 239
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 240
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 241
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 242
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 243
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 244
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 245
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 246
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 247
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 248
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 249
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 250
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 251
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 252
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 253
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 254
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 255
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 256
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 257
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 258
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 259
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 260
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 261
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 262
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 263
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 264
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 265
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 266
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 267
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 268
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 269
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 270
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 271
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 272
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 273
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 274
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 275
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 276
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 277
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 278
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 279
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 280
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 281
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 282
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 283
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 284
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 285
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 286
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 287
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 288
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 289
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 290
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 291
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 292
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 293
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 294
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 295
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 296
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 297
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 298
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 299
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 300
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 301
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 302
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 303
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 304
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 305
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 306
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 307
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 308
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 309
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 310
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 311
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 312
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 313
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 314
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 315
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 316
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 317
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 318
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 319
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 320
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 321
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 322
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 323
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 324
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 325
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 326
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 327
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 328
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 329
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 330
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 331
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 332
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 333
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 334
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 335
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 336
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 337
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 338
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 339
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 340
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 341
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 342
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 343
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 344
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 345
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 346
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 347
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 348
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 349
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 350
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 351
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 352
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 353
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 354
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 355
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 356
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 357
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 358
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 359
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 360
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 361
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 362
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 363
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 364
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 365
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 366
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 367
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 368
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 369
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 370
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 371
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 372
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 373
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 374
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 375
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 376
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 377
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 378
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 379
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 380
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 381
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 382
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 383
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 384
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 385
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 386
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 387
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 388
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 389
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 390
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 391
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 392
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 393
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 394
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 395
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 396
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 397
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 398
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 399
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 400
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 401
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 402
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 403
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 404
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 405
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 406
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 407
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 408
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 409
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 410
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 411
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 412
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 413
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 414
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 415
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 416
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 417
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 418
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 419
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 420
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 421
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 422
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 423
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 424
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 425
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 426
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 427
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 428
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 429
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 430
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 431
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 432
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 433
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 434
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 435
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 436
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 437
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 438
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 439
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 440
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 441
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 442
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 443
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 444
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 445
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 446
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 447
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 448
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 449
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 450
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 451
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 452
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 453
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 454
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 455
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 456
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 457
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 458
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 459
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 460
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 461
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 462
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 463
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 464
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 465
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 466
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 467
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 468
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 469
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 470
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 471
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 472
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 473
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 474
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 475
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 476
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 477
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 478
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 479
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 480
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 481
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 482
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 483
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 484
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 485
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 486
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 487
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 488
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 489
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 490
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 491
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 492
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 493
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 494
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 495
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 496
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 497
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 498
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 499
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 500
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 501
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 502
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 503
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 504
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 505
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 506
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 507
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 508
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 509
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 510
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 511
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 512
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 513
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 514
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 515
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 516
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 517
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 518
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 519
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 520
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 521
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 522
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 523
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 524
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 525
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 526
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 527
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 528
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 529
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 530
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 531
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 532
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 533
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 534
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 535
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 536
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 537
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 538
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 539
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 540
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 541
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 542
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 543
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 544
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 545
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 546
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 547
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 548
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 549
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 550
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 551
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 552
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 553
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 554
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 555
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 556
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 557
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 558
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 559
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 560
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 561
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 562
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 563
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 564
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 565
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 566
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 567
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 568
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 569
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 570
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 571
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 572
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 573
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 574
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 575
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 576
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 577
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 578
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 579
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 580
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 581
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 582
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 583
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 584
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 585
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 586
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 587
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 588
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 589
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 590
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 591
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 592
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 593
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 594
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 595
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 596
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 597
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 598
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 599
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 600
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 601
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 602
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 603
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 604
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 605
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 606
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 607
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 608
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 609
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 610
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 611
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 612
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 613
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 614
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 615
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 616
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 617
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 618
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 619
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 620
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 621
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 622
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 623
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 624
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 625
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 626
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 627
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 628
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 629
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 630
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 631
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 632
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 633
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 634
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 635
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 636
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 637
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 638
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 639
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 640
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 641
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 642
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 643
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 644
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 645
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 646
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 647
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 648
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 649
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 650
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 651
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 652
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 653
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 654
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 655
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 656
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 657
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 658
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 659
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 660
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 661
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 662
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 663
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 664
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 665
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 666
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 667
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 668
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 669
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 670
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 671
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 672
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 673
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 674
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 675
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 676
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 677
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 678
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 679
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 680
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 681
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 682
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 683
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 684
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 685
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 686
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 687
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 688
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 689
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 690
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 691
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 692
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 693
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 694
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 695
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 696
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 697
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 698
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 699
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 700
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 701
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 702
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 703
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 704
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 705
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 706
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 707
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 708
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 709
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 710
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 711
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 712
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 713
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 714
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 715
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 716
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 717
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 718
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 719
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 720
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 721
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 722
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 723
+[WARNING]: Skipped malformed data in "load/000/order.txt", line: 724
+[ERROR]: "IndexError: ('too many indices for array: array is 1-dimensional, but 2 were indexed',)".
+[ERROR]: Traceback (most recent call last):
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/bin/pyretisrun.py", line 522, in main
+             run(simulation, settings, progress=progress)
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/bin/pyretisrun.py", line 282, in run_path_simulation
+             if not sim.initiate(sim_settings):
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/simulation/path_simulation.py", line 291, in initiate
+             for i_ens, (accept, path, status, path_ensemble) in enumerate(init):
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/initiation/initiate_load.py", line 121, in initiate_load
+             accept, status = read_path_files_ext(
+                              ^^^^^^^^^^^^^^^^^^^^
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/initiation/initiate_load.py", line 860, in read_path_files_ext
+             orderdata = _load_order_parameters_ext(traj, dirname,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           File "/home/jonas/pyretis_venv/lib/python3.12/site-packages/pyretis/initiation/initiate_load.py", line 590, in _load_order_parameters_ext
+             return order['data'][:, 1:]
+                    ~~~~~~~~~~~~~^^^^^^^
+         IndexError: too many indices for array: array is 1-dimensional, but 2 were indexed
+         
+[INFO]: Execution ended at step 0
+[INFO]: Full simulation settings written to: /home/jonas/pyretis_venv/examples/11_LAMMPS/out.rst
+[INFO]: End of PyRETIS execution: 17.03.2026 18:36:24
 [INFO]: PyRETIS references:
         -------------------
         [1] A. Lervik, E. Riccardi and T. S. van Erp, J. Comput. Chem., 2017
